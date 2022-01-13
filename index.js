@@ -15,6 +15,10 @@ const express = require('express')
 
 const app = express()
 
+app.get('/', (req, res) => {
+    res.json({ message: 'hello there'})
+})
+
 app.get('/hello', (req, res) => {
     res.json({ message: 'hello there'})
 })
